@@ -1,0 +1,6 @@
+export const APP_NAME          = 'Nebula'
+export const APP_SCHEME        = 'nebula'
+export const APP_SUPPORT_EMAIL = 'support@nebula.app'
+export const APP_DOCS_URL      = 'https://nebula.app/docs'
+export const APP_TAGLINE       = 'Your stars, decoded.'
+export const APP_DESCRIPTION   = 'Daily horoscopes, birth charts, compatibility reports, and an AI astrologer — all in one place.'

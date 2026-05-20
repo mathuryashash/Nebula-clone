@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Nebula",
+    "slug": "nebula-astrology",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "nebula",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080612"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nebula.astrology"
+    },
+    "android": {
+      "package": "com.nebula.astrology",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#080612"
+      },
+      "androidStatusBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#080612",
+        "translucent": true
+      }
+    },
+    "web": { "favicon": "./assets/icon.png" },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      ["expo-splash-screen", { "backgroundColor": "#080612", "image": "./assets/splash-icon.png", "imageWidth": 200 }],
+      "expo-secure-store",
+      "expo-localization",
+      "expo-font"
+    ],
+    "extra": { "router": {}, "eas": { "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID" } }
+  }
+}
