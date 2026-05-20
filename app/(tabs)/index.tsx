@@ -31,7 +31,7 @@ function PeriodPill({ label, active, onPress }: { label: string; active: boolean
   return (
     <Pressable onPress={onPress} style={({ pressed }) => [s.pill, active && s.pillActive, pressed && { opacity: 0.8 }]}>
       {active && (
-        <LinearGradient colors={['#a855f7','#7c3aed']} start={{x:0,y:0}} end={{x:1,y:0}} style={StyleSheet.absoluteFillObject} borderRadius={999} />
+        <LinearGradient colors={['#a855f7','#7c3aed']} start={{x:0,y:0}} end={{x:1,y:0}} style={[StyleSheet.absoluteFillObject, { borderRadius: 999 }]} />
       )}
       <Text style={[s.pillText, active && s.pillTextActive]}>{label}</Text>
     </Pressable>
@@ -117,8 +117,7 @@ export default function TodayScreen() {
             <LinearGradient
               colors={[elemColor + '18', 'transparent']}
               start={{x:0,y:0}} end={{x:1,y:1}}
-              style={StyleSheet.absoluteFillObject}
-              borderRadius={20}
+              style={[StyleSheet.absoluteFillObject, { borderRadius: 20 }]}
             />
             <View style={s.signRow}>
               <View style={[s.signIconBg, { backgroundColor: elemColor + '22' }]}>
