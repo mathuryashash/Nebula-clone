@@ -3,7 +3,7 @@ export type ItemStatus = 'active' | 'inactive' | 'pending' | 'archived';
 export interface ActivityItem { id: string; itemId: string; kind: string; title: string; detail: string; timeAgo: string; }
 export interface ItemSummary { id: string; name: string; owner: string; status: ItemStatus; completion: number; health: number; activeUsers: number; updatedAt: string; summary: string; }
 export interface TaskItem { id: string; itemId: string; title: string; state: string; priority: string; dueDate: string; }
-export interface NotificationItem { id: string; title: string; message: string; read: boolean; body?: string; }
+export interface NotificationItem { id: string; title: string; message: string; read: boolean; body?: string; timeAgo?: string; }
 
 export const activityItems: ActivityItem[] = [];
 export const itemSummaries: ItemSummary[] = [];
